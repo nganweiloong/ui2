@@ -1,0 +1,145 @@
+/* Backup hex codes for reference */
+@theme {
+  /* 🌐 Primary */
+  --color-primary-50: #eef7ff;
+  --color-primary-100: #daedff;
+  --color-primary-200: #bde0ff;
+  --color-primary-300: #8fcfff;
+  --color-primary-400: #5bb0ff;
+  --color-primary-500: #348ffd;
+  --color-primary-600: #1e6ff2;
+  --color-primary-700: #175ce5;
+  --color-primary-800: #194b84;
+  --color-primary-900: #1a408e;
+  --color-primary-950: #152956;
+
+  /* 🌸 Azalea Pink */
+  --color-azalea-50: #feecf0;
+  --color-azalea-100: #fcc5d3;
+  --color-azalea-200: #fbb2c4;
+  --color-azalea-300: #f88ca7;
+  --color-azalea-400: #f66589;
+  --color-azalea-500: #f43f6c;
+  --color-azalea-600: #ce335a;
+  --color-azalea-700: #a82747;
+  --color-azalea-800: #821b35;
+  --color-azalea-900: #5c0f22;
+  --color-azalea-950: #490919;
+
+  /* 🍊 Carnelian Orange */
+  --color-carnelian-50: #ffe1eb;
+  --color-carnelian-100: #fee4d8;
+  --color-carnelian-200: #fcc9b1;
+  --color-carnelian-300: #fbad89;
+  --color-carnelian-400: #f99262;
+  --color-carnelian-500: #f8773b;
+  --color-carnelian-600: #d06330;
+  --color-carnelian-700: #a94224;
+  --color-carnelian-800: #813a19;
+  --color-carnelian-900: #5a250d;
+  --color-carnelian-950: #461b08;
+
+  /* ☂️ Electric Violet */
+  --color-electric-50: #f3f1ff;
+  --color-electric-100: #eae5ff;
+  --color-electric-200: #d7cfff;
+  --color-electric-300: #b9a9ff;
+  --color-electric-400: #9778ff;
+  --color-electric-500: #7742ff;
+  --color-electric-600: #681cff;
+  --color-electric-700: #5808f4;
+  --color-electric-800: #4b08cf;
+  --color-electric-900: #4009a9;
+  --color-electric-950: #240273;
+
+  /* 🧤 Emerald */
+  --color-emerald-50: #eafff4;
+  --color-emerald-100: #cdfee3;
+  --color-emerald-200: #a0facd;
+  --color-emerald-300: #63f2b2;
+  --color-emerald-400: #25e294;
+  --color-emerald-500: #00ce80;
+  --color-emerald-600: #00a466;
+  --color-emerald-700: #008356;
+  --color-emerald-800: #006745;
+  --color-emerald-900: #00553a;
+  --color-emerald-950: #003022;
+
+  /* 🌲 Forest Green */
+  --color-forest-50: #f2fcf1;
+  --color-forest-100: #dff9df;
+  --color-forest-200: #c0f2c1;
+  --color-forest-300: #8fe692;
+  --color-forest-400: #57d15a;
+  --color-forest-500: #30b735;
+  --color-forest-600: #229626;
+  --color-forest-700: #1e7721;
+  --color-forest-800: #1d5e20;
+  --color-forest-900: #194e1c;
+  --color-forest-950: #092a0c;
+
+  /* 🍅 Monza */
+  --color-monza-50: #fef2f2;
+  --color-monza-100: #fee2e2;
+  --color-monza-200: #ffc9c9;
+  --color-monza-300: #fda4a4;
+  --color-monza-400: #fa6f6f;
+  --color-monza-500: #f14242;
+  --color-monza-600: #d11f1f;
+  --color-monza-700: #bb1a1a;
+  --color-monza-800: #9b1919;
+  --color-monza-900: #801c1c;
+  --color-monza-950: #460909;
+
+  /* 🗻 Neutral */
+  --color-neutral-50: #f9f9fb;
+  --color-neutral-100: #f1f2f6;
+  --color-neutral-200: #e2e6eb;
+  --color-neutral-300: #d4d9e2;
+  --color-neutral-400: #b8c0d0;
+  --color-neutral-500: #93a0bc;
+  --color-neutral-600: #71795f;
+  --color-neutral-700: #49536b;
+  --color-neutral-800: #31394a;
+  --color-neutral-900: #232936;
+  --color-neutral-950: #171a20;
+
+  /* 🐬 Picton Blue */
+  --color-picton-50: #eff9ff;
+  --color-picton-100: #def2ff;
+  --color-picton-200: #b6e8ff;
+  --color-picton-300: #76d6ff;
+  --color-picton-400: #2ec3ff;
+  --color-picton-500: #02a7ee;
+  --color-picton-600: #0089d2;
+  --color-picton-700: #006eaa;
+  --color-picton-800: #005c8c;
+  --color-picton-900: #074c73;
+  --color-picton-950: #04314d;
+
+  /* 🍕 Pizazz */
+  --color-pizazz-50: #fff4e5;
+  --color-pizazz-100: #ffeacc;
+  --color-pizazz-200: #ffdca8;
+  --color-pizazz-300: #ffcc7a;
+  --color-pizazz-400: #ffad33;
+  --color-pizazz-500: #ff9400;
+  --color-pizazz-600: #e26d00;
+  --color-pizazz-700: #bb4902;
+  --color-pizazz-800: #983808;
+  --color-pizazz-900: #7c2f0b;
+  --color-pizazz-950: #481600;
+
+  /* 🌟 Supernova */
+  --color-supernova-50: #fffee7;
+  --color-supernova-100: #fffcc1;
+  --color-supernova-200: #fff686;
+  --color-supernova-300: #ffe941;
+  --color-supernova-400: #ffd70d;
+  --color-supernova-500: #ffc700;
+  --color-supernova-600: #d19100;
+  --color-supernova-700: #a66702;
+  --color-supernova-800: #89500a;
+  --color-supernova-900: #74410f;
+  --color-supernova-950: #442204;
+}
