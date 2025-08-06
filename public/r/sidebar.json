@@ -2,17 +2,14 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "sidebar",
   "type": "registry:ui",
-  "dependencies": [
-    "@phosphor-icons/react",
-    "@radix-ui/react-slot"
-  ],
+  "dependencies": ["@phosphor-icons/react", "@radix-ui/react-slot"],
   "registryDependencies": [
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/input.json",
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/separator.json",
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/sheet.json",
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/skeleton.json",
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/tooltip.json"
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/input.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/separator.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/sheet.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/skeleton.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/tooltip.json"
   ],
   "files": [
     {

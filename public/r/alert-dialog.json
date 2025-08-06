@@ -2,11 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "alert-dialog",
   "type": "registry:ui",
-  "dependencies": [
-    "@radix-ui/react-alert-dialog"
-  ],
+  "dependencies": ["@radix-ui/react-alert-dialog"],
   "registryDependencies": [
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json"
   ],
   "files": [
     {

@@ -3,7 +3,7 @@
   "name": "button-group",
   "type": "registry:ui",
   "registryDependencies": [
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json"
   ],
   "files": [
     {

@@ -28,7 +28,7 @@
       "name": "alert-dialog",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json"
       ],
       "dependencies": ["@radix-ui/react-alert-dialog"],
       "files": [
@@ -43,8 +43,8 @@
       "name": "alert",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/icon-button.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/icon-button.json"
       ],
       "dependencies": ["@phosphor-icons/react"],
       "files": [
@@ -59,7 +59,7 @@
       "name": "avatar-group",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/avatar.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/avatar.json"
       ],
       "files": [
         {
@@ -109,8 +109,8 @@
       "name": "button-group",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/icon-button.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/icon-button.json"
       ],
       "dependencies": [],
       "files": [
@@ -137,7 +137,7 @@
       "name": "calendar",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/icon-button.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/icon-button.json"
       ],
       "dependencies": ["@phosphor-icons/react", "react-day-picker"],
       "files": [
@@ -200,7 +200,7 @@
       "name": "command",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/dialog.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/dialog.json"
       ],
       "dependencies": [
         "@phosphor-icons/react",
@@ -219,7 +219,7 @@
       "name": "data-table",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/table.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/table.json"
       ],
       "dependencies": ["@tanstack/react-table"],
       "files": [
@@ -234,9 +234,9 @@
       "name": "date-picker",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/calendar.json",
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/popover.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/calendar.json",
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/popover.json"
       ],
       "dependencies": ["@phosphor-icons/react"],
       "files": [
@@ -285,7 +285,7 @@
       "name": "empty-state",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json"
       ],
       "dependencies": ["@phosphor-icons/react", "@radix-ui/react-slot"],
       "files": [
@@ -312,7 +312,7 @@
       "name": "form",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/label.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/label.json"
       ],
       "dependencies": [
         "@radix-ui/react-label",
@@ -331,7 +331,7 @@
       "name": "icon-button",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json"
       ],
       "dependencies": [],
       "files": [
@@ -558,9 +558,9 @@
       "name": "time-picker-2",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/command.json",
-        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/popover.json"
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/command.json",
+        "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/popover.json"
       ],
       "dependencies": ["@phosphor-icons/react"],
       "files": [

@@ -3,7 +3,7 @@
   "name": "avatar-group",
   "type": "registry:ui",
   "registryDependencies": [
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/avatar.json"
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/avatar.json"
   ],
   "files": [
     {

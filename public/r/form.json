@@ -8,7 +8,7 @@
     "react-hook-form"
   ],
   "registryDependencies": [
-    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/label.json"
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/label.json"
   ],
   "files": [
     {
