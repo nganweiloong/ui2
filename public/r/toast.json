@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toast",
+  "type": "registry:ui",
+  "dependencies": [
+    "@phosphor-icons/react",
+    "sonner",
+    "next-themes"
+  ],
+  "files": [
+    {
+      "path": "src/components/toast.tsx",
+      "content": "\"use client\";\n\nimport { CheckCircleIcon } from \"@phosphor-icons/react/dist/ssr/CheckCircle\";\nimport { InfoIcon } from \"@phosphor-icons/react/dist/ssr/Info\";\nimport { WarningIcon } from \"@phosphor-icons/react/dist/ssr/Warning\";\nimport { WarningCircleIcon } from \"@phosphor-icons/react/dist/ssr/WarningCircle\";\nimport { useTheme } from \"next-themes\";\nimport { Toaster as Sonner, ToasterProps, toast } from \"sonner\";\n\nconst Toaster = ({ ...props }: ToasterProps) => {\n  const { theme = \"light\" } = useTheme();\n\n  return (\n    <Sonner\n      theme={theme as ToasterProps[\"theme\"]}\n      className=\"toaster group\"\n      position=\"bottom-right\"\n      richColors\n      style={\n        {\n          \"--normal-bg\": \"var(--popover)\",\n          \"--normal-text\": \"var(--popover-foreground)\",\n          \"--normal-border\": \"var(--border)\",\n        } as React.CSSProperties\n      }\n      icons={{\n        success: <CheckCircleIcon weight=\"fill\" size={20} />,\n        info: <InfoIcon weight=\"fill\" size={20} />,\n        warning: <WarningIcon weight=\"fill\" size={20} />,\n        error: <WarningCircleIcon weight=\"fill\" size={20} />,\n      }}\n      {...props}\n    />\n  );\n};\n\nexport { Toaster, toast };\n",
+      "type": "registry:ui",
+      "target": "components/toast.tsx"
+    }
+  ]
+}

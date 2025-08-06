@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "files": [
+    {
+      "path": "src/components/button.tsx",
+      "content": "import { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst buttonVariants = cva(\n  \"inline-flex shrink-0 items-center justify-center gap-2 rounded-lg text-sm leading-none font-medium whitespace-nowrap transition-all focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-danger aria-invalid:ring-danger/20 dark:aria-invalid:ring-danger/40 [&_svg]:pointer-events-none [&_svg]:shrink-0\",\n  {\n    variants: {\n      variant: {\n        primary:\n          \"bg-primary text-primary-foreground shadow-xs hover:bg-primary-hover hover:ring-4 hover:ring-primary-hover/20 active:bg-primary-active active:ring-4 active:ring-primary-active/40 active:ring-offset-0\",\n        secondary:\n          \"border border-border bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary-hover active:bg-secondary-active\",\n        danger:\n          \"bg-danger text-danger-foreground shadow-xs hover:bg-danger-hover hover:ring-4 focus-visible:ring-danger-hover/20 active:bg-danger-active active:ring-danger-active/40 dark:bg-danger/60 dark:focus-visible:ring-danger/40\",\n        ghost:\n          \"text-inherit hover:bg-secondary-hover active:bg-secondary-active\",\n        dashed:\n          \"border border-dashed border-border hover:bg-secondary-hover active:bg-secondary-active\",\n      },\n      size: {\n        // use `has-[>svg]:px-*` to change side paddings when there is an icon\n        xs: \"h-6 px-2 has-[>svg:only-child]:w-6 [&_svg:not([class*='size-'])]:size-4\",\n        sm: \"h-8 px-2 has-[>svg:only-child]:w-8 [&_svg:not([class*='size-'])]:size-4\",\n        md: \"h-9 px-4 py-2 has-[>svg:only-child]:w-9 [&_svg:not([class*='size-'])]:size-5\",\n        lg: \"h-10 px-4 has-[>svg:only-child]:w-10 [&_svg:not([class*='size-'])]:size-5\",\n      },\n    },\n    defaultVariants: {\n      variant: \"primary\",\n      size: \"md\",\n    },\n  },\n);\n\nfunction Button({\n  asChild = false,\n  className,\n  size,\n  variant,\n  ...props\n}: React.ComponentProps<\"button\"> &\n  VariantProps<typeof buttonVariants> & {\n    asChild?: boolean;\n  }) {\n  const Comp = asChild ? Slot : \"button\";\n\n  return (\n    <Comp\n      data-slot=\"button\"\n      className={cn(buttonVariants({ variant, size }), className)}\n      {...props}\n    />\n  );\n}\n\nexport { Button, buttonVariants };\n",
+      "type": "registry:ui",
+      "target": "components/button.tsx"
+    }
+  ]
+}

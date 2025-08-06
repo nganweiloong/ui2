@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "empty-state",
+  "type": "registry:ui",
+  "dependencies": [
+    "@phosphor-icons/react"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/empty-state.tsx",
+      "content": "import type { Icon } from \"@phosphor-icons/react\";\nimport { VariantProps, cva } from \"class-variance-authority\";\nimport { Button } from \"@/components/button\";\nimport { cn } from \"@/lib/utils\";\n\nconst emptyStateVariants = cva(\"flex flex-col justify-center text-center\", {\n  variants: {\n    variant: {\n      default: \"\",\n      dashed: \"rounded-lg border border-dashed border-border p-8\",\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n});\n\nfunction EmptyState({\n  className,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof emptyStateVariants>) {\n  return (\n    <div\n      data-slot=\"empty-state\"\n      className={cn(emptyStateVariants({ variant, className }))}\n      {...props}\n    />\n  );\n}\n\nfunction EmptyStateIcon({\n  children,\n  className,\n  ...props\n}: React.HTMLAttributes<HTMLElement> & { children: React.ReactElement<Icon> }) {\n  return (\n    <div\n      data-slot=\"empty-state-icon\"\n      className=\"peer flex justify-center text-muted-foreground [&>svg:not([class*='size-'])]:size-16\"\n      {...props}\n    >\n      {children}\n    </div>\n  );\n}\n\nfunction EmptyStateTitle({ className, ...props }: React.ComponentProps<\"h3\">) {\n  return (\n    <h3\n      data-slot=\"empty-state-title\"\n      className={cn(\n        \"peer text-lg font-semibold peer-data-[slot=empty-state-icon]:mt-4\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction EmptyStateDescription({\n  className,\n  ...props\n}: React.ComponentProps<\"p\">) {\n  return (\n    <p\n      data-slot=\"empty-state-description\"\n      className={cn(\n        \"peer text-sm peer-data-[slot=empty-state-title]:mt-1\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction EmptyStateAction({\n  className,\n  ...props\n}: React.ComponentProps<typeof Button>) {\n  return (\n    <Button\n      data-slot=\"empty-state-action\"\n      className={cn(\"peer mt-8 w-max self-center only:mt-0\", className)}\n      {...props}\n    />\n  );\n}\n\nexport {\n  EmptyState,\n  EmptyStateIcon,\n  EmptyStateTitle,\n  EmptyStateDescription,\n  EmptyStateAction,\n};\n",
+      "type": "registry:ui",
+      "target": "components/empty-state.tsx"
+    }
+  ]
+}

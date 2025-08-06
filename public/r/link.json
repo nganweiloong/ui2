@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "link",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "src/components/link.tsx",
+      "content": "import { cva } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst linkVariants = cva(\n  \"cursor-pointer rounded text-primary underline-offset-4 hover:text-primary-hover hover:underline focus-visible:outline focus-visible:outline-offset-1 focus-visible:outline-ring active:text-primary-active\",\n);\n\nfunction Link({\n  children,\n  className,\n  newTab,\n  ...props\n}: React.ComponentProps<\"a\"> & { newTab?: boolean }) {\n  return (\n    <a\n      className={cn(linkVariants({ className }))}\n      {...(newTab ? { target: \"_blank\", rel: \"noopener noreferrer\" } : {})}\n      {...props}\n    >\n      {children}\n    </a>\n  );\n}\n\nexport { Link, linkVariants };\n",
+      "type": "registry:ui",
+      "target": "components/link.tsx"
+    }
+  ]
+}

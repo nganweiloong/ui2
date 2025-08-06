@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "src/components/input.tsx",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst inputVariants = cva(\n  \"flex w-full min-w-0 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"rounded-lg border border-input bg-transparent px-3 py-1 text-sm transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-neutral-500 hover:border-primary-hover hover:read-only:border-input focus:border-primary-hover focus:ring-4 focus:ring-primary-hover/20 focus:outline-none focus:read-only:border-input focus:read-only:ring-0 aria-invalid:border-danger dark:bg-input/30 dark:aria-invalid:border-danger/40\",\n        invisible:\n          \"bg-transparent text-inherit placeholder:text-neutral-500 focus:ring-0 focus:outline-none\",\n      },\n      size: {\n        sm: \"h-8\",\n        md: \"h-10\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"md\",\n    },\n  },\n);\n\nfunction Input({\n  className,\n  size,\n  variant,\n  ...props\n}: React.ComponentProps<\"input\"> & VariantProps<typeof inputVariants>) {\n  return (\n    <input\n      data-slot=\"input\"\n      className={cn(inputVariants({ variant, size }), className)}\n      {...props}\n    />\n  );\n}\n\nexport { Input };\n",
+      "type": "registry:ui",
+      "target": "components/input.tsx"
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "plugins": ["tailwindcss-animate"],
+  "items": [
+    {
+      "name": "index",
+      "type": "registry:style",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "devDependencies": ["tw-animate-css"],
+      "registryDependencies": ["utils"],
+      "files": []
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-accordion", "@phosphor-icons/react"],
+      "files": [
+        {
+          "path": "src/components/accordion.tsx",
+          "target": "components/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+      ],
+      "dependencies": ["@radix-ui/react-alert-dialog"],
+      "files": [
+        {
+          "path": "src/components/alert-dialog.tsx",
+          "target": "components/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/icon-button.json"
+      ],
+      "dependencies": ["@phosphor-icons/react"],
+      "files": [
+        {
+          "path": "src/components/alert.tsx",
+          "target": "components/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/avatar.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/avatar-group.tsx",
+          "target": "components/avatar-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-avatar"],
+      "files": [
+        {
+          "path": "src/components/avatar.tsx",
+          "target": "components/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/badge.tsx",
+          "target": "components/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "dependencies": ["@phosphor-icons/react", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "src/components/breadcrumb.tsx",
+          "target": "components/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/icon-button.json"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/button-group.tsx",
+          "target": "components/button-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "src/components/button.tsx",
+          "target": "components/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/icon-button.json"
+      ],
+      "dependencies": ["@phosphor-icons/react", "react-day-picker"],
+      "files": [
+        {
+          "path": "src/components/calendar.tsx",
+          "target": "components/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/card.tsx",
+          "target": "components/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "dependencies": ["@phosphor-icons/react", "@radix-ui/react-checkbox"],
+      "files": [
+        {
+          "path": "src/components/checkbox.tsx",
+          "target": "components/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chip",
+      "type": "registry:ui",
+      "dependencies": ["@phosphor-icons/react"],
+      "files": [
+        {
+          "path": "src/components/chip.tsx",
+          "target": "components/chip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-collapsible"],
+      "files": [
+        {
+          "path": "src/components/collapsible.tsx",
+          "target": "components/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/dialog.json"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "@radix-ui/react-dialog",
+        "cmdk"
+      ],
+      "files": [
+        {
+          "path": "src/components/command.tsx",
+          "target": "components/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/table.json"
+      ],
+      "dependencies": ["@tanstack/react-table"],
+      "files": [
+        {
+          "path": "src/components/data-table.tsx",
+          "target": "components/data-table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/calendar.json",
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/popover.json"
+      ],
+      "dependencies": ["@phosphor-icons/react"],
+      "files": [
+        {
+          "path": "src/components/date-picker.tsx",
+          "target": "components/date-picker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "description-list",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/description-list.tsx",
+          "target": "components/description-list.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "dependencies": ["@phosphor-icons/react", "@radix-ui/react-dialog"],
+      "files": [
+        {
+          "path": "src/components/dialog.tsx",
+          "target": "components/dialog.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/tailwind.config.js",
+          "type": "registry:file",
+          "target": "tailwind.config.js"
+        },
+        {
+          "path": "registry/globals.css",
+          "target": "app/globals.css",
+          "type": "registry:file"
+        }
+      ]
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+      ],
+      "dependencies": ["@phosphor-icons/react", "@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "src/components/empty-state.tsx",
+          "target": "components/empty-state.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "focusable",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "src/components/focusable.tsx",
+          "target": "components/focusable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/label.json"
+      ],
+      "dependencies": [
+        "@radix-ui/react-label",
+        "@radix-ui/react-slot",
+        "react-hook-form"
+      ],
+      "files": [
+        {
+          "path": "src/components/form.tsx",
+          "target": "components/form.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "icon-button",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/icon-button.tsx",
+          "target": "components/icon-button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/input.tsx",
+          "target": "components/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-label"],
+      "files": [
+        {
+          "path": "src/components/label.tsx",
+          "target": "components/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "link",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/link.tsx",
+          "target": "components/link.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "notification-badge",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/notification-badge.tsx",
+          "target": "components/notification-badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-popover"],
+      "files": [
+        {
+          "path": "src/components/popover.tsx",
+          "target": "components/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-progress"],
+      "files": [
+        {
+          "path": "src/components/progress.tsx",
+          "target": "components/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "dependencies": ["@phosphor-icons/react", "@radix-ui/react-radio-group"],
+      "files": [
+        {
+          "path": "src/components/radio-group.tsx",
+          "target": "components/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-scroll-area"],
+      "files": [
+        {
+          "path": "src/components/scroll-area.tsx",
+          "target": "components/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "@radix-ui/react-select",
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "src/components/select.tsx",
+          "target": "components/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-separator"],
+      "files": [
+        {
+          "path": "src/components/separator.tsx",
+          "target": "components/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "dependencies": ["@phosphor-icons/react", "@radix-ui/react-dialog"],
+      "files": [
+        {
+          "path": "src/components/sheet.tsx",
+          "target": "components/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/skeleton.tsx",
+          "target": "components/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "src/components/slider.tsx",
+          "target": "components/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "dependencies": ["@radix-ui/react-switch"],
+      "files": [
+        {
+          "path": "src/components/switch.tsx",
+          "target": "components/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/table.tsx",
+          "target": "components/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-tabs"
+      ],
+      "files": [
+        {
+          "path": "src/components/tabs.tsx",
+          "target": "components/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/components/textarea.tsx",
+          "target": "components/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "time-picker-2",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/button.json",
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/command.json",
+        "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/popover.json"
+      ],
+      "dependencies": ["@phosphor-icons/react"],
+      "files": [
+        {
+          "path": "src/components/time-picker.tsx",
+          "target": "components/time-picker.tsx",
+          "type": "registry:ui"
+        },
+
+        {
+          "path": "registry/tailwind.config.js",
+          "type": "registry:file",
+          "target": "tailwind.config.js"
+        },
+        {
+          "path": "registry/globals.css",
+          "target": "app/globals.css",
+          "type": "registry:file"
+        }
+      ]
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "dependencies": ["sonner"],
+      "files": [
+        {
+          "path": "src/components/toast.tsx",
+          "target": "components/toast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/avatar.tsx",
+      "content": "\"use client\";\n\nimport * as AvatarPrimitive from \"@radix-ui/react-avatar\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst avatarVariants = cva(\n  \"relative flex shrink-0 overflow-hidden rounded-full\",\n  {\n    variants: {\n      variant: {\n        default: \"*:data-[slot^=avatar-]:bg-muted\",\n        picton:\n          \"*:data-[slot=avatar-fallback]:text-accent-foreground *:data-[slot^=avatar-]:bg-picton-500\",\n        emerald:\n          \"*:data-[slot=avatar-fallback]:text-accent-foreground *:data-[slot^=avatar-]:bg-emerald-500\",\n        pizazz:\n          \"*:data-[slot=avatar-fallback]:text-accent-foreground *:data-[slot^=avatar-]:bg-pizazz-500\",\n        electric:\n          \"*:data-[slot=avatar-fallback]:text-accent-foreground *:data-[slot^=avatar-]:bg-electric-500\",\n        azalea:\n          \"*:data-[slot=avatar-fallback]:text-accent-foreground *:data-[slot^=avatar-]:bg-azalea-500\",\n        carnelian:\n          \"*:data-[slot=avatar-fallback]:text-accent-foreground *:data-[slot^=avatar-]:bg-carnelian-500\",\n      },\n      size: {\n        sm: \"size-6 [&>[data-slot=avatar-fallback]>svg]:size-3\",\n        md: \"size-8 [&>[data-slot=avatar-fallback]>svg]:size-4\",\n        lg: \"size-10 [&>[data-slot=avatar-fallback]>svg]:size-5\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"md\",\n    },\n  },\n);\n\nfunction Avatar({\n  className,\n  size,\n  variant,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Root> &\n  VariantProps<typeof avatarVariants>) {\n  return (\n    <AvatarPrimitive.Root\n      data-slot=\"avatar\"\n      className={cn(avatarVariants({ variant, size }), className)}\n      {...props}\n    />\n  );\n}\n\nfunction AvatarImage({\n  className,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Image>) {\n  return (\n    <AvatarPrimitive.Image\n      data-slot=\"avatar-image\"\n      className={cn(\"aspect-square size-full\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction AvatarFallback({\n  className,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Fallback>) {\n  return (\n    <AvatarPrimitive.Fallback\n      data-slot=\"avatar-fallback\"\n      className={cn(\n        \"flex size-full items-center justify-center rounded-full bg-muted\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Avatar, AvatarImage, AvatarFallback, avatarVariants };\n",
+      "type": "registry:ui",
+      "target": "components/avatar.tsx"
+    }
+  ]
+}

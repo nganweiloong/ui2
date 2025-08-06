@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "notification",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "src/components/notification.tsx",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst notificationVariants = cva(\n  \"inline-flex items-center bg-danger transition-colors\",\n  {\n    variants: {\n      size: {\n        sm: \"h-4 min-w-4 px-1 text-xs\",\n        md: \"h-6 min-w-6 px-2 text-base\",\n      },\n      variant: {\n        dot: \"size-2 rounded-sm\",\n        default: \"justify-center rounded font-medium text-primary-foreground\",\n      },\n    },\n    compoundVariants: [{ variant: \"dot\", class: \"min-w-2 px-0\" }],\n    defaultVariants: {\n      variant: \"default\",\n    },\n  },\n);\n\nfunction Notification({\n  className,\n  size,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof notificationVariants>) {\n  return (\n    <div\n      className={cn(notificationVariants({ size, variant }), className)}\n      {...props}\n    />\n  );\n}\n\nfunction NotificationNumber({\n  className,\n  ...props\n}: React.ComponentProps<\"span\">) {\n  return <span className={cn(\"tabular-nums\", className)} {...props} />;\n}\n\nexport { Notification, NotificationNumber, notificationVariants };\n// todo: not done\n",
+      "type": "registry:ui",
+      "target": "components/notification.tsx"
+    }
+  ]
+}

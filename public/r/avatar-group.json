@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-group",
+  "type": "registry:ui",
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/netizen-experience/ui/refs/heads/registry-test/public/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/avatar-group.tsx",
+      "content": "\"use client\";\n\nimport type { VariantProps } from \"class-variance-authority\";\nimport { createContext, useContext } from \"react\";\nimport { Avatar, avatarVariants } from \"@/components/avatar\";\nimport { cn } from \"@/lib/utils\";\n\nconst AvatarGroupContext = createContext<VariantProps<typeof avatarVariants>>({\n  variant: \"default\",\n  size: \"md\",\n});\n\nfunction AvatarGroup({\n  children,\n  className,\n  overlapDirection = \"ltr\",\n  size,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> &\n  VariantProps<typeof avatarVariants> & { overlapDirection?: \"ltr\" | \"rtl\" }) {\n  return (\n    <div\n      data-slot=\"avatar-group\"\n      className={cn(\n        \"flex -space-x-2 px-4 py-2\",\n        overlapDirection === \"rtl\" && \"flex-row-reverse space-x-reverse\",\n        className,\n      )}\n      {...props}\n    >\n      <AvatarGroupContext.Provider value={{ variant, size }}>\n        {children}\n      </AvatarGroupContext.Provider>\n    </div>\n  );\n}\n\nfunction AvatarGroupItem({\n  className,\n  size,\n  variant,\n  ...props\n}: React.ComponentProps<typeof Avatar>) {\n  const context = useContext(AvatarGroupContext);\n\n  return (\n    <Avatar\n      data-slot=\"avatar-group-item\"\n      data-variant={context.variant || variant}\n      data-size={context.size || size}\n      className={cn(\"outline-2 outline-background\", className)}\n      variant={context.variant || variant}\n      size={context.size || size}\n      {...props}\n    />\n  );\n}\n\nexport { AvatarGroup, AvatarGroupItem };\n",
+      "type": "registry:ui",
+      "target": "components/avatar-group.tsx"
+    }
+  ]
+}

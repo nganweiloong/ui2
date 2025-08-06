@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox",
+  "type": "registry:ui",
+  "dependencies": [
+    "@phosphor-icons/react",
+    "@radix-ui/react-checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/checkbox.tsx",
+      "content": "\"use client\";\n\nimport { CheckIcon } from \"@phosphor-icons/react/dist/ssr/Check\";\nimport { MinusIcon } from \"@phosphor-icons/react/dist/ssr/Minus\";\nimport * as CheckboxPrimitive from \"@radix-ui/react-checkbox\";\nimport { cva, VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst checkboxVariants = cva(\n  \"peer shrink-0 border border-input bg-background hover:border-primary focus-visible:ring focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:outline-none data-[state-checked]:hover:outline data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground data-[state=checked]:hover:outline-primary-hover/20 data-[state=indeterminate]:border-primary data-[state=indeterminate]:bg-primary data-[state=indeterminate]:text-primary-foreground data-[state=indeterminate]:hover:outline-primary-hover/20\",\n  {\n    variants: {\n      size: {\n        sm: \"size-4 rounded-[4px] data-[state=checked]:hover:outline data-[state=indeterminate]:hover:outline\",\n        md: \"size-6 rounded-[6px] data-[state=checked]:hover:outline-2 data-[state=indeterminate]:hover:outline-2\",\n      },\n    },\n    defaultVariants: {\n      size: \"md\",\n    },\n  },\n);\n2;\nfunction Checkbox({\n  className,\n  size,\n  ...props\n}: React.ComponentProps<typeof CheckboxPrimitive.Root> &\n  VariantProps<typeof checkboxVariants>) {\n  const IndicatorIcon =\n    props.checked === \"indeterminate\" ? MinusIcon : CheckIcon;\n\n  return (\n    <CheckboxPrimitive.Root\n      data-slot=\"checkbox\"\n      className={cn(checkboxVariants({ size }), className)}\n      {...props}\n    >\n      <CheckboxPrimitive.Indicator\n        data-slot=\"checkbox-indicator\"\n        className=\"flex items-center justify-center text-current transition-none\"\n      >\n        <IndicatorIcon\n          weight=\"bold\"\n          className={size === \"sm\" ? \"size-3\" : \"size-5\"}\n        />\n      </CheckboxPrimitive.Indicator>\n    </CheckboxPrimitive.Root>\n  );\n}\n\nexport { Checkbox };\n",
+      "type": "registry:ui",
+      "target": "components/checkbox.tsx"
+    }
+  ]
+}
