@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "shadcn build",
+    "build": " npx shadcn build './src/registry/registry.json' && npx shadcn build './src/registry/v0.json' ",
+    "upload": "npm run build && git add . && git commit -n -m 'Updating registry..' && git push",
     "lint": "eslint .",
     "preview": "vite preview"
   },

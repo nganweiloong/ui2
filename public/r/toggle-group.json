@@ -2,7 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "toggle-group",
   "type": "registry:ui",
-  "dependencies": ["@radix-ui/react-toggle-group"],
+  "dependencies": [
+    "@radix-ui/react-toggle-group"
+  ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toggle.json"
   ],

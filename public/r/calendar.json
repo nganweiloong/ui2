@@ -2,7 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "calendar",
   "type": "registry:ui",
-  "dependencies": ["@phosphor-icons/react", "react-day-picker"],
+  "dependencies": [
+    "@phosphor-icons/react",
+    "react-day-picker"
+  ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json"
   ],

@@ -2,7 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "command",
   "type": "registry:ui",
-  "dependencies": ["@phosphor-icons/react", "cmdk"],
+  "dependencies": [
+    "@phosphor-icons/react",
+    "cmdk"
+  ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/dialog.json"
   ],
