@@ -59,7 +59,7 @@
   "files": [
     {
       "path": "src/registry/page.tsx",
-      "content": "",
+      "content": "const Page = () => {\n  return <h1>Hello world</h1>;\n};\nexport default Page;\n",
       "type": "registry:page",
       "target": "app/page.tsx"
     }
