@@ -1,0 +1,79 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "v0-4",
+  "type": "registry:ui",
+  "title": "Registry for v0",
+  "description": "A simple hello world component.",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "devDependencies": [
+    "tw-animate-css"
+  ],
+  "registryDependencies": [
+    "utils",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/alert-dialog.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/accordion.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/alert.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/avatar-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/avatar.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/badge.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/breadcrumb.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/calendar.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/card.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/carousel.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/checkbox.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/chip.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/collapsible.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/command.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/context-menu.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/dialog.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/drawer.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/dropdown-menu.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/empty-state.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/form.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/hover-card.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/input-otp.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/input.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/label.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/link.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/notification.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/popover.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/progress.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/radio-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/resizable.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/scroll-area.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/select.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/separator.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/sheet.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/sidebar.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/skeleton.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/slider.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/switch.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/table.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/tabs.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/textarea.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toast.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toggle-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toggle.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/tooltip.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/typography.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/page.tsx",
+      "content": "const Page = () => {\n  return <h1>Hello world</h1>;\n};\nexport default Page;\n",
+      "type": "registry:page",
+      "target": "app/page.tsx"
+    },
+    {
+      "path": "src/styles/globals.css",
+      "content": "@import \"tailwindcss\";\n\n@import \"tw-animate-css\";\n@import \"./colors.css\";\n\n@custom-variant dark (&:is(.dark *));\n\n:root {\n  --radius: 0.5rem;\n\n  --background: oklch(1 0 0);\n  --foreground: oklch(21.733% 0.0127 264.27);\n  --card: oklch(1 0 0);\n  --card-foreground: oklch(21.733% 0.0127 264.27);\n  --popover: oklch(1 0 0);\n  --popover-foreground: oklch(21.733% 0.0127 264.27);\n\n  --primary: oklch(57.38% 0.2113 260.2);\n  --primary-hover: oklch(52.458% 0.2183 262.13);\n  --primary-active: oklch(41.141% 0.109 254.33);\n  --primary-foreground: oklch(1 0 0);\n\n  --secondary: oklch(1 0 0);\n  --secondary-hover: oklch(96.152% 0.0054 274.97);\n  --secondary-active: oklch(92.332% 0.008 253.86);\n  --secondary-foreground: oklch(21.733% 0.0127 264.27);\n\n  --muted: oklch(92.332% 0.008 253.86);\n  --muted-foreground: oklch(59.7% 0.05185 266.384);\n\n  --accent: oklch(69.125% 0.1525 237.8);\n  --accent-foreground: oklch(1 0 0);\n\n  --danger: oklch(63.809% 0.2117 25.545);\n  --danger-hover: oklch(55.231% 0.2099 27.673);\n  --danger-active: oklch(50.792% 0.1935 27.718);\n  --danger-foreground: oklch(1 0 0);\n\n  --subtle: oklch(93.751% 0.0317 246.7);\n  --subtle-hover: oklch(82.888% 0.094 241.69);\n  --subtle-active: oklch(65.3% 0.1843 255.56);\n  --subtle-foreground: oklch(57.38% 0.2113 260.2);\n\n  --info-bold: oklch(69.125% 0.1525 237.8);\n  --info-subtle: oklch(95.032% 0.0275 236.17);\n  --info-foreground: oklch(51.738% 0.1257 243.22);\n  --info-border: oklch(83.239% 0.1074 227.92);\n  --warning-bold: oklch(85.555% 0.1749 88.008);\n  --warning-subtle: oklch(97.927% 0.0753 105.28);\n  --warning-foreground: oklch(56.962% 0.1241 68.348);\n  --warning-border: oklch(92.475% 0.1757 101.52);\n  --success-bold: oklch(68.324% 0.2034 143.38);\n  --success-subtle: oklch(95.624% 0.0439 145.22);\n  --success-foreground: oklch(49.968% 0.1467 143.4);\n  --success-border: oklch(84.913% 0.1427 144.95);\n\n  --border: oklch(92.332% 0.008 253.86);\n  --input: oklch(88.411% 0.0135 262.38);\n  --ring: oklch(21.733% 0.0127 264.27);\n  --overlay: oklch(97.171% 0.0144 244.71 / 0.5);\n\n  --chart-1: oklch(69.125% 0.1525 237.8);\n  --chart-2: oklch(56.095% 0.2581 287.77);\n  --chart-3: oklch(74.957% 0.1769 157.48);\n  --chart-4: oklch(76.358% 0.1756 62.086);\n  --chart-5: oklch(64.798% 0.2162 11.527);\n  --chart-6: oklch(71.145% 0.1741 43.433);\n\n  --sidebar: oklch(1 0 0);\n  --sidebar-foreground: oklch(21.733% 0.0127 264.27);\n  --sidebar-primary: oklch(57.38% 0.2113 260.2);\n  --sidebar-primary-foreground: oklch(1 0 0);\n  --sidebar-accent: oklch(69.125% 0.1525 237.8);\n  --sidebar-accent-foreground: oklch(1 0 0);\n  --sidebar-border: oklch(92.332% 0.008 253.86);\n  --sidebar-ring: oklch(21.733% 0.0127 264.27);\n}\n\n.dark {\n  --background: oklch(28.096% 0.0256 265.43);\n  --foreground: oklch(98.268% 0.0026 286.35);\n  --card: oklch(34.45% 0.0318 265.09);\n  --card-foreground: oklch(98.268% 0.0026 286.35);\n  --popover: oklch(44.324% 0.0416 267.08);\n  --popover-foreground: oklch(98.268% 0.0026 286.35);\n\n  --primary: oklch(57.38% 0.2113 260.2);\n  --primary-hover: oklch(52.458% 0.2183 262.13);\n  --primary-active: oklch(41.141% 0.109 254.33);\n  --primary-foreground: oklch(1 0 0);\n\n  --secondary: oklch(34.45% 0.0318 265.09);\n  --secondary-hover: oklch(44.324% 0.0416 267.08);\n  --secondary-active: oklch(56.189% 0.0398 121.58);\n  --secondary-foreground: oklch(98.268% 0.0026 286.35);\n\n  --muted: oklch(34.45% 0.0318 265.09);\n  --muted-foreground: oklch(80.652% 0.0242 264.43);\n\n  --danger: oklch(63.809% 0.2117 25.545);\n  --danger-hover: oklch(55.231% 0.2099 27.673);\n  --danger-active: oklch(50.792% 0.1935 27.718);\n  --danger-foreground: oklch(1 0 0);\n  --sidebar: hsl(240 5.9% 10%);\n  --sidebar-foreground: hsl(240 4.8% 95.9%);\n  --sidebar-primary: hsl(224.3 76.3% 48%);\n  --sidebar-primary-foreground: hsl(0 0% 100%);\n  --sidebar-accent: hsl(240 3.7% 15.9%);\n  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);\n  --sidebar-border: hsl(240 3.7% 15.9%);\n  --sidebar-ring: hsl(217.2 91.2% 59.8%);\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --color-card: var(--card);\n  --color-card-foreground: var(--card-foreground);\n  --color-popover: var(--popover);\n  --color-popover-foreground: var(--popover-foreground);\n\n  --color-primary: var(--primary);\n  --color-primary-hover: var(--primary-hover);\n  --color-primary-active: var(--primary-active);\n  --color-primary-foreground: var(--primary-foreground);\n\n  --color-secondary: var(--secondary);\n  --color-secondary-hover: var(--secondary-hover);\n  --color-secondary-active: var(--secondary-active);\n  --color-secondary-foreground: var(--secondary-foreground);\n\n  --color-muted: var(--muted);\n  --color-muted-foreground: var(--muted-foreground);\n\n  --color-accent: var(--accent);\n  --color-accent-foreground: var(--accent-foreground);\n\n  --color-danger: var(--danger);\n  --color-danger-hover: var(--danger-hover);\n  --color-danger-active: var(--danger-active);\n  --color-danger-foreground: var(--danger-foreground);\n\n  --color-subtle: var(--subtle);\n  --color-subtle-hover: var(--subtle-hover);\n  --color-subtle-active: var(--subtle-active);\n  --color-subtle-foreground: var(--subtle-foreground);\n\n  --color-info-bold: var(--info-bold);\n  --color-info-subtle: var(--info-subtle);\n  --color-info-foreground: var(--info-foreground);\n  --color-info-border: var(--info-border);\n  --color-warning-bold: var(--warning-bold);\n  --color-warning-subtle: var(--warning-subtle);\n  --color-warning-foreground: var(--warning-foreground);\n  --color-warning-border: var(--warning-border);\n  --color-success-bold: var(--success-bold);\n  --color-success-subtle: var(--success-subtle);\n  --color-success-foreground: var(--success-foreground);\n  --color-success-border: var(--success-border);\n\n  --color-border: var(--border);\n  --color-input: var(--input);\n  --color-ring: var(--ring);\n  --color-overlay: var(--overlay);\n\n  --radius-sm: calc(var(--radius) - 4px);\n  --radius-md: calc(var(--radius) - 2px);\n  --radius-lg: var(--radius);\n  --radius-xl: calc(var(--radius) + 4px);\n\n  --color-chart-1: var(--chart-1);\n  --color-chart-2: var(--chart-2);\n  --color-chart-3: var(--chart-3);\n  --color-chart-4: var(--chart-4);\n  --color-chart-5: var(--chart-5);\n  --color-chart-6: var(--chart-6);\n  --color-sidebar: var(--sidebar);\n\n  --color-sidebar-foreground: var(--sidebar-foreground);\n  --color-sidebar-primary: var(--sidebar-primary);\n  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);\n  --color-sidebar-accent: var(--sidebar-accent);\n  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);\n  --color-sidebar-border: var(--sidebar-border);\n  --color-sidebar-ring: var(--sidebar-ring);\n}\n\n@layer base {\n  * {\n    @apply border-border outline-ring/50;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}\n",
+      "type": "registry:file",
+      "target": "app/globals.css"
+    }
+  ]
+}
