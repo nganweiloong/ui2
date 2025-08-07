@@ -71,7 +71,7 @@
         {
           "path": "src/styles/globals.css",
           "target": "app/globals.css",
-          "type": "registry:item"
+          "type": "registry:file"
         }
       ]
     }
