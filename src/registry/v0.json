@@ -67,6 +67,11 @@
           "path": "src/registry/page.tsx",
           "target": "app/page.tsx",
           "type": "registry:page"
+        },
+        {
+          "path": "src/styles/globals.css",
+          "target": "app/globals.css",
+          "type": "registry:item"
         }
       ]
     }
