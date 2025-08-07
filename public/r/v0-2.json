@@ -1,0 +1,73 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "v0-2",
+  "type": "registry:ui",
+  "title": "Registry for v0",
+  "description": "A simple hello world component.",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "devDependencies": [
+    "tw-animate-css"
+  ],
+  "registryDependencies": [
+    "utils",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/alert-dialog.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/accordion.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/alert.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/avatar-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/avatar.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/badge.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/breadcrumb.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/button.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/calendar.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/card.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/carousel.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/checkbox.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/chip.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/collapsible.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/command.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/context-menu.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/dialog.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/drawer.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/dropdown-menu.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/empty-state.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/form.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/hover-card.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/input-otp.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/input.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/label.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/link.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/notification.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/popover.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/progress.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/radio-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/resizable.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/scroll-area.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/select.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/separator.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/sheet.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/sidebar.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/skeleton.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/slider.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/switch.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/table.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/tabs.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/textarea.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toast.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toggle-group.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/toggle.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/tooltip.json",
+    "https://raw.githubusercontent.com/nganweiloong/ui2/refs/heads/main/public/r/typography.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/page.tsx",
+      "content": "const Page = () => {\n  return <h1>Hello world</h1>;\n};\nexport default Page;\n",
+      "type": "registry:page",
+      "target": "app/page.tsx"
+    }
+  ]
+}
