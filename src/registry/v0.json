@@ -5,7 +5,7 @@
   "plugins": ["tailwindcss-animate"],
   "items": [
     {
-      "name": "v0",
+      "name": "v0-1",
       "type": "registry:ui",
       "title": "Registry for v0",
       "dependencies": ["class-variance-authority", "lucide-react"],
