@@ -20,7 +20,6 @@ const checkboxVariants = cva(
     },
   },
 );
-2;
 function Checkbox({
   className,
   size,
